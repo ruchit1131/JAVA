@@ -1,0 +1,25 @@
+
+interface Color
+{
+ int BLACK=0,BLUE=1,RED=2,GREEN=3;
+  
+ void setDrawColor(int clr);
+ void setFillColor(int clr);
+ 
+}
+ 
+abstract class Shape implements Color
+{
+}
+
+psvm
+{
+ Color c;
+ c=new Circle;
+ 
+ c.setBounds(100,100,200,200);// wrong
+ c.setDrawColor(Color.RED);
+ c.setFillColor(Color.BLUE);
+ c.create();//wrong
+ c.show();//wrong
+}
